@@ -78,81 +78,80 @@ Riporto di seguito il diagramma dei casi d’uso e le schermate che verranno vis
 
 ### Login, errori di autenticazione, Log Success
 <p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/Login/LoginKotlin.png" width="175" alt="Immagine 1">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/Login/LogOkKotlin.png" width="175" alt="Immagine 2">
-</p>
-<p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/Login/LogErrKotlin.png" width="175" alt="Immagine 3">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/Login/LogErr2Kotlin.png" width="175" alt="Immagine 4">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/Login/Log.png" width="175" alt="Immagine 1">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/Login/LogErr1.png" width="175" alt="Immagine 2">
+   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/Login/LogErr2.png" width="175" alt="Immagine 3">
 </p>
 
 ### Home del cuoco, logout e anagrafiche
 <p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/HomeCuocoKotlin.png" width="175" alt="Immagine 5">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/AnagraficheKotlin.png" width="175" alt="Immagine 6">
-   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/onBackPress.png" width="175" alt="Immagine 7">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomeCuoco/HomeCuoco.png" width="175" alt="Immagine 4">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/onBackPressed.png" width="175" alt="Immagine 5">
+   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/Anagrafiche.png" width="175" alt="Immagine 6">
 </p>
 
 ### Liste del magazzino, inserimento ed errore nell'inserimento
 <p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/Lista/ListaMagazzinoKotlin.png" width="175" alt="Immagine 8">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/InserimentoMagazzino/ErroreInserimento.png" width="175" alt="Immagine 9">
-   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/InserimentoMagazzino/InserimentoKotlin.png" width="175" alt="Immagine 10">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/Magazzino/ListaRichieste.png" width="175" alt="Immagine 7">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/Magazzino/ListaMagazzino.png" width="175" alt="Immagine 8">
 </p>
 <p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/InserimentoMagazzino/InsertOkKotlin.png" width="175" alt="Immagine 11">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/Lista/ListaRichiesteKotlin.png" width="175" alt="Immagine 12">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/Magazzino/InserimentoMagazzino.png" width="175" alt="Immagine 9">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/Magazzino/ErrInserimento.png" width="175" alt="Immagine 10">
 </p>
 
 ### Home del dipendente generico, inserimento di una suddivisione lavoro ed errore
 <p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/HomeGen.png" width="175" alt="Immagine 13">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/InserisciSuddLavoro/InsSuddLavKotlin.png" width="175" alt="Immagine 14">
-   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/InserisciSuddLavoro/SuddInsErrKotlin.png" width="175" alt="Immagine 15">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomeGen/HomeGen.png" width="175" alt="Immagine 11">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomeGen/SuddLavoro/Inserimento/InserimentoSudd.png" width="175" alt="Immagine 12">
+   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomeGen/SuddLavoro/Inserimento/InsErr.png" width="175" alt="Immagine 13">
 </p>
 
 ### Lista delle suddivisione lavoro, eliminazione di un elemento
 <p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/GenListaSudd/ListaSuddGen.png" width="175" alt="Immagine 16">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/GenListaSudd/ListaSuddLavCFKotlin.png" width="175" alt="Immagine 17">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomeGen/SuddLavoro/CFSudd.png" width="175" alt="Immagine 14">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomeGen/SuddLavoro/ListaSudd.png" width="175" alt="Immagine 15">
+   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomeGen/SuddLavoro/EliminaSudd.png" width="175" alt="Immagine 16">
 </p>
 <p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/GenListaSudd/ListaDeleteQuestKotlin.png" width="175" alt="Immagine 18">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/GenListaSudd/ListaSuddLvDelOkKotlin.png" width="175" alt="Immagine 19">
-</p>
-
-### Home del dipendente professionale
-<p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/HomePro1.png" width="175" alt="Immagine 20">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/HomePro2.png" width="175" alt="Immagine 21">
-   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/HomePro2.png" width="175" alt="Immagine 22">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomeGen/SuddLavoro/EliminazioneOk.png" width="175" alt="Immagine 17">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomeGen/SuddLavoro/ErrCF.png" width="175" alt="Immagine 18">
+   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomeGen/SuddLavoro/Screenshot_1630706731.png" width="175" alt="Immagine 19">
 </p>
 
-### Inserimento della prenoazione di un macchinario, liste delle prenotazioni personali ed eliminazione
+### Home del dipendente professionale e lista delle suddivisioni lavoro
 <p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/PrenotazioneMacchina/InserisciPrenotazione.png" width="175" alt="Immagine 23">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/Lista/ListaPrenMie.png" width="175" alt="Immagine 24">
-   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/PrenotazioneMacchina/CancellazionePrenotazione.png" width="175" alt="Immagine 25">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/HomeMess.png" width="175" alt="Immagine 20">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/HomeNoMess.png" width="175" alt="Immagine 21">
+   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/ListeSuddPro.png" width="175" alt="Immagine 22">
 </p>
 
-### Lista dei messaggi, delle prenotazioni generiche ed errore nella cancellazione
+### Inserimento di un trasferimento di lavoro, liste dei trasferimenti ed eliminazione e lista dei messaggi.
 <p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/Lista/ListaMessaggi.png" width="175" alt="Immagine 26">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/PrenotazioniGeneMacch/ListaPrenotazioniMacchinario.png" width="175" alt="Immagine 27">
-   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/PrenotazioniGeneMacch/ErrListaPrenotazioni.png" width="175" alt="Immagine 28">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/TrasferimentoLavoro/ListaTrasf.png" width="175" alt="Immagine 23">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/TrasferimentoLavoro/InsTrasf.png" width="175" alt="Immagine 24">
+   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/TrasferimentoLavoro/EliminaTrasf.png" width="175" alt="Immagine 25">
+</p>
+<p align="center">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/TrasferimentoLavoro/ElimErr.png" width="175" alt="Immagine 26">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/ListaMessaggi.png" width="175" alt="Immagine 27">
 </p>
 
-### Lista delle suddivisioni e dei trasferimenti di lavoro
+### Inserimento prenotazione di un macchinario ed errore
 <p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/Lista/ListaSuddPro.png" width="175" alt="Immagine 29">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/TrasferimentoLavoro/ListaTrasfProKotlin.png" width="175" alt="Immagine 30">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/Prenotazioni/InsPreno.png" width="175" alt="Immagine 26">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/Prenotazioni/InserimentoOKPreno.png" width="175" alt="Immagine 27">
+   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/Prenotazioni/ErrInsPreno.png" width="175" alt="Immagine 28">
 </p>
 
-### Inserimento e cancellazione di un trasferimento di lavoro, con errori
+### Liste prenotazioni, generiche e personali
 <p align="center">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/TrasferimentoLavoro/InsTrasfKotlin.png" width="175" alt="Immagine 31">
-  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/TrasferimentoLavoro/TrasferimentoLavoroDeleteErr.png" width="175" alt="Immagine 32">
-   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Kotlin/blob/main/KotlinFoto/TrasferimentoLavoro/ListaTrasfLavoroCancKotlin.png" width="175" alt="Immagine 33">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/Prenotazioni/CodMacchina.png" width="175" alt="Immagine 29">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/Prenotazioni/ListaPrenotazioneGen.png" width="175" alt="Immagine 30">
+</p>
+<p align="center">
+   <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/Prenotazioni/MyPrenotazioni.png" width="175" alt="Immagine 31">
+  <img src="https://github.com/Simone-Scalella/ProgettoProgrammazioneMobile-Flutter/blob/main/FlatterFoto/HomePro/Prenotazioni/ListaPrenErr.png" width="175" alt="Immagine 32">
 </p>
 
 ## Sviluppo
