@@ -14,9 +14,9 @@ Le applicazione hanno come target i tre tipi di dipendenti dell’azienda, che s
 
 ## Approccio allo sviluppo
 
-La realizzazione dell’applicazione parte con la raccolta dei requisiti, fondamentali per lo sviluppo, inoltre, bisognava sviluppare l’applicazione considerando che il server e il relativo database erano già stati implementati, quindi, si è partito con lo sviluppo delle singole schermate che avrebbero costituito l’applicazione, dividendo ogni componente in un sottoproblema.
+La realizzazione dell’applicazione parte con la raccolta dei requisiti, fondamentali per lo sviluppo. Inoltre, bisognava sviluppare l’applicazione considerando che il server e il relativo database erano già stati implementati, quindi, si è partito con lo sviluppo delle singole schermate che avrebbero costituito l’applicazione, dividendo ogni componente in un sottoproblema.
 Sono stati implementati i layout e le funzionalità richieste. A seguire le varie componenti sono state unificate secondo la logica dei requisiti.
-Per la realizzazione dell’applicazione sono state utilizzate le documentazioni Kotlin e Android, più altre informazioni reperite su siti di terzi (ad esempio stackoverflow etc...), in questo modo è stato possibile superare le varie problematiche che si sono verificate in fase di sviluppo.
+Per la realizzazione dell’applicazione sono state utilizzate le documentazioni Flutter e Dart, più altre informazioni reperite su siti di terzi (ad esempio stackoverflow etc...), in questo modo è stato possibile superare le varie problematiche che si sono verificate in fase di sviluppo.
 
 ## Analisi dei requisiti
 
@@ -27,7 +27,7 @@ Partiamo descrivendo la schermata iniziale, quella di Login. A questo punto l’
 * L’utente esiste all’interno del server ma non rientra in una delle categorie specificate (’pro’,’gen’,’cuoco’) quindi si avvisa questa persona che non può proseguire nell’utilizzo dell’applicazione. 
 * L’utente esiste all’interno del server e rientra in una delle categorie specificate, quindi, l’applicazione prosegue visualizzando la corrispondente home. 
 * L’utente inserisce delle credenziali sbagliate quindi viene avvisato dell’errore. Se ci sono altri tipi di errori l’utente viene comunque avvisato.
-* L’operazione di login ha avuto successo e otteniamo dal server una risposta, che contiene delle informazioni sull’utente e un token ( una stringa ) che sarà necessario per fare tutte le successive richieste al server. Passiamo dall’activity del Login a una delle activity che rappresenta la home del corrispondente dipendente e si potranno usare le varie funzionalità.
+* L’operazione di login ha avuto successo e otteniamo dal server una risposta, che contiene delle informazioni sull’utente e un token ( una stringa ) che sarà necessario per fare tutte le successive richieste al server.
 
 **Inserimento:** sono tutte le schermate che permettono all’utente di inserire dei dati, i quali tramite una POST vengono inviati al server, validati ed inseriti all’interno del DB; ci sono diverse schermate per l’inserimento, quelle per inserire una richiesta per l’utilizzo di un oggetto del magazzino, quella per inserire una suddivisione lavoro, quella per inserire la prenotazione di un macchinario e quella per inserire un trasferimento di lavoro, alcune di queste schermate sono accessibili da tutti, altre solo da specifici dipendenti. Se l’inserimento è andato a buon fine l’applicazione ritorna alla schermata iniziale e l’utente viene avvisato.
 
@@ -41,7 +41,7 @@ Partiamo descrivendo la schermata iniziale, quella di Login. A questo punto l’
 
 **Anagrafiche:** questa è una semplice schermata utile per visualizzare le informazioni personali del dipendente.
 
-**LogOut:** il pulsante di Logout è l’unico che l’utente ha per tornare nella schermata di Login, la funzione del tasto Back è stata sovrascritta per ottenere questo risultato, infatti, se l’utente nella home preme il tasto Back viene sempre visualizzato un AlertDialog che lo avvisa della necessità di premere il tasto Logout se si intende effettuare la disconnessione. Questa scelta è stata fatta per evitare che l’utente si disconnetta premendo accidentalmente o ripetutamente il tasto Back, che invece, mantiene la sua funzione nelle altre schermate. Inoltre, nel tasto Logout viene chiamata un’ istruzione che termina l’activity e tutti i suoi processi.
+**LogOut:** il pulsante di Logout è l’unico che l’utente ha per tornare nella schermata di Login, la funzione del tasto Back è stata sovrascritta per ottenere questo risultato, infatti, se l’utente nella home preme il tasto Back viene sempre visualizzato un AlertDialog che lo avvisa della necessità di premere il tasto Logout se si intende effettuare la disconnessione. Questa scelta è stata fatta per evitare che l’utente si disconnetta premendo accidentalmente o ripetutamente il tasto Back, che invece, mantiene la sua funzione nelle altre schermate.
 
 **Messaggi:** per implementare una primitiva della notifica, cioè, per avvisare l’utente quando sono state modificate delle prenotazioni, è stato implementato un cronometro che, all’interno della home del dip. professionale effettua ogni 10 secondi una richiesta al server, se l’esito è positivo significa che ci sono dei messaggi per questo utente, altrimenti significa che l’utente non ha ricevuto dei messaggi, in base a questo risultato viene cambiato il colore del tasto messaggi, che diventa rosso per esito positivo, altrimenti blu.
 
@@ -59,17 +59,16 @@ nascita sono inventate. Il server è l’unica applicazione che si interfaccia d
 fatte per il DB vengono gestite prima dal server, così come anche le risposte che contengono le informazioni del DB.
 
 ## Architettura
-### Classi Kotlin, Activity, Fragment
 
-Per questa applicazione ogni POST ha una corrispondente Data Class così come anche ogni risposta del server ha una o più Data Class necessarie per fare il parsing. L’applicazione sfrutta activity e fragment secondo un’architettura modulare. Si è deciso di raggruppare in quattro macro categorie il progetto complessivo:
+Ci sono quattro cartelle principali:
 
-1. **welcome:** all’interno di questa cartella ci sono tutti tutte le Data Class necessarie per fare il parsing delle risposte del server e per fare le POST, la MainActivity che consiste nell’activity principale dell’app, quella da cui si fa il Login, con il suo viewModel, il validatore, un oggetto usato per effettuare dei controlli, e infine, è presente l’ ApiRequests che consiste nell’interfaccia all’interno della quale sono definite tutte le funzioni per fare le richieste GET o POST al server.
+1. **Anagrafiche:** all’interno di questa cartella c'è la classe che implementa la schermata per la visualizzazione delle anagrafiche di un dipendente.
 
-2. **homeCuoco:** all’interno di questa cartella c'è il fragment, che permette all’utente di usufruire delle varie funzionalità dell’app, e l’Activity principale che rappresenta la home del dipendente cuoco.
+2. **HomeCuoco:** all’interno di questa cartella ci sono tutte le classi per la gestione del magazzino e la sua home.
 
-3. **homeGen:** all’interno di questa cartella c’`e il fragment che permette all’utente di usufruire delle varie funzionalit`a dell’app e l’Activity principale che rappresenta la home del dipendente generico, abbiamo una sotto-cartella per la suddivisione lavoro che al suo interno contiene due altre sotto-cartelle, una per l’inserimento e l’altra per la lista delle suddivisioni lavoro, nell’inserimento abbiamo la classe del fragment e le gi`a citate Data Class, nella classe per la lista abbiamo oltre alla Data Class e alla classe per il fragment, abbiamo l’adapter per la Recycler view della lista.
+3. **HomeGen:** all’interno di questa cartella ci sono tutte le classi per la gestione delle suddivisioni lavoro e la sua home.
 
-4. **homePro:** all’interno di questa cartella c'è il fragment che permette all’utente di usufruire delle varie funzionalità dell’app e l’Activity principale che rappresenta la home del dipendente professionale. Sono presenti delle sotto-cartelle, una per le anagrafiche, che contiene il fragment di visualizzazione delle anagrafiche. Le altre cartelle seguono una logica comune a quella della cartella suddivisione lavoro per il dipendente generico, infatti, abbiamo al loro interno altre sotto-cartelle per suddividere le liste dagli inserimenti. Ci sono le già citate Data Class, inoltre, sono presenti gli adapter per le Recycler view e le classi dei vari fragment.
+4. **HomePro:** all’interno di questa cartella ci sono tutte le classi per la gestione dei messaggi, prenotazione di un macchinario, gestire i trasferimenti lavoro, la lista delle suddivisioni lavoro e la sua home.
 
 ## UI
 Riporto di seguito il diagramma dei casi d’uso e le schermate che verranno visualizzate durante l’utilizzo dell’applicazione, considerando tutte le operazioni che possono essere svolte.
@@ -160,16 +159,13 @@ Riporto di seguito il diagramma dei casi d’uso e le schermate che verranno vis
 
 In questa sezione descriverò brevemente gli aspetti più interessanti dello sviluppo dell'applicazione:
 
-* **RecyclerView:** ogni recyclerview presente nel progetto è stata pensata con lo scopo di mostrare tutti gli elementi laddove erano presenti in quantità non indifferente. Ognuna di esse è stata gestita tramite un Adapter, attraverso il quale sono andato ad inserire gli elementi che ci venivano restituiti come risposta dal server. In alcune recyclerview come detto in precedenza ho definito l’azione da compiere per l’evento onLongClick.
+* **Programmazione asincrona:** all’interno dell’applicazione per ogni richiesta fatta al server sono stati usati i Future, una sorta di promessa di una funzione di ritornare un valore in un momento futuro, fornito dalla libreria dart:async. Per gestire i future ho usato le keyword async che usato subito dopo l’intestazione di una funzione, serve per dichiarare che ritornerà un Future e l’altra keyword è await che subito prima della chiamata di una funzione, serve a mettere l’esecuzione in pausa, in attesa che il risultato sia disponibile. L’esecuzione riprenderà da quel punto.
 
-* **Permessi:** sono stati utilizzati i permessi nel manifest per far utilizzare all’app la connessione internet, però, solo questi permessi non sono sufficienti, in quanto android di default non permette di fare richieste HTTP ma solo HTTPS, quindi è stato necessario implementare ulteriori permessi all’interno del file citato precedentemente dove ho definito un ulteriore permesso per il localhost, in quanto le richieste definite utilizzano il protocollo HTTP e non l’altro.
+* **HTTP:** ho utilizzato il package http, che fornisce le principali funzionalità per il networking, con supporto per Android, iOS ed il web. Per poter effettuare le chiamate al server ho aggiunto http alle dependencies di pubspec.yaml ed ho importato il package nel file dart.
 
-* **API:** per fare le varie richieste ho utilizzato retrofit, libreria di networking che trasforma una API HTTP in un interfaccia Kotlin e Java,abilita il processamento di richieste e risposte come oggetti per usarli nell’app, si appoggia su librerie standard, come OkHttp. Ho utilizzato moshi per effettuare il parsing delle risposte,`e una libreria JSON per il parsing di JSON in oggetti (e viceversa).
+* **Parsing in background:** quando faccio il parsing delle risposte del server, per evitare che task computazionalmente pesanti rallentino la UI dell’applicazione, ho usato il concetto di ”Isolate” per eseguire i task su un background thread. Per chiamare la funzione di parsing nell’applicazione ho usato “compute”,in questo modo viene utilizzato un isolate separato che verrà eseguito in background.
 
-* **Autenticazione:** successivamente all’autenticazione, se la richiesta è andata a buon fine tramite un intent si passa da un’activity ad un’altra. Per passare la risposta ottenuta dal server la corrispondente data class è stata definita come serializable, quest’oggetto viene anche passato tra i vari fragment.
-
-* **Coroutine:** all’interno dell’applicazione tutte le funzioni vengono chiamate all’interno di coroutine, introdotte in Kotlin 1.3, mantengono l’app reattiva mentre vengono eseguiti dei long-running tasks che in questo caso sono le chiamate al server, le eccezioni sono state gestite in fase di sviluppo all’interno di blocchi try/catch. Tutte le funzioni che implementano le richieste al server sono definite come suspend, è stato utilizzato il Dispatchers.IO per mandare in esecuzione le chiamate al server, in questo modo il thread principale non viene rallentato.
-Il Dispatchers.Main viene utilizzato nell’applicazione solo quando, successivamente ad una risposta del server, bisogna modificare alcuni elementi del layout, come ad esempio una View o una recyclerview.
+* **List view:** è un widget che consente di visualizzare un elenco scrollabile di elementi. Può essere utilizzato per mostrare un elenco di elementi in modo efficiente, permettendo all'utente di scorrere l'elenco verticalmente o orizzontalmente, a seconda della configurazione. Inoltre, offre la possibilità di costruire dinamicamente gli elementi della lista.
 
 ## Testing
 
@@ -181,12 +177,4 @@ Percorso /app/src/test/java/welcome
 * Verifica che il campo username e password non sia vuoto.
 * Verifica sulla lunghezza del codice fiscale inserito.
 * Verifica sulla lunghezza del codice macchina inserito.
-
-### UI test
-
-La cartella che contiene i test si chiama welcome.
-Percorso app/src/androidTest/java/welcome
-
-* Test sulla UI dell’app, viene simulata una situazione di loggin dell’utente.
-* Test sulla UI dell’app, viene simulata una situazione di inserimento da parte del cuoco di una richiesta per un oggetto del magazzino.
 
